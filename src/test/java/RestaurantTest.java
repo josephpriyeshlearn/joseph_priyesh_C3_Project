@@ -80,13 +80,10 @@ class RestaurantTest {
         List<String> orderItems = Arrays.asList("Sweet corn soup", "Vegetable lasagne");
 
         // find total order value
-        // for compilation purpose, we are disabling this line of code temporarily.
-        // int totalOrderValue = restaurant.getOrderValue(orderItems);
+        int totalOrderValue = restaurant.getOrderValue(orderItems);
 
         // Assertion
-        // assertEquals(totalOrderValue, 388);
-        // for compilation purpose, we are putting up a fake assertion.
-        assertEquals(0, orderItems.size());
+        assertEquals(totalOrderValue, 388);
     }
     //<<<<<<<<<<<<<<<<<<<<<<<Getting Order Value>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 }
