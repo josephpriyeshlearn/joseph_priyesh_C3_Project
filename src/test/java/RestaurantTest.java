@@ -73,4 +73,20 @@ class RestaurantTest {
     }
     //<<<<<<<<<<<<<<<<<<<<<<<MENU>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
+    //<<<<<<<<<<<<<<<<<<<<<<<Getting Order Value>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+    @Test
+    public void order_value_should_be_380_when_SweetCornSoup_and_Vegetable_lasagne_are_ordered() throws restaurantNotFoundException{
+        // Arrange order items
+        List<String> orderItems = Arrays.asList("Sweet corn soup", "Vegetable lasagne");
+
+        // find total order value
+        // for compilation purpose, we are disabling this line of code temporarily.
+        // int totalOrderValue = restaurant.getOrderValue(orderItems);
+
+        // Assertion
+        // assertEquals(totalOrderValue, 388);
+        // for compilation purpose, we are putting up a fake assertion.
+        assertEquals(0, orderItems.size());
+    }
+    //<<<<<<<<<<<<<<<<<<<<<<<Getting Order Value>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 }
